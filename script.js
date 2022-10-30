@@ -5,11 +5,11 @@ function validate(isSubmitted = false) {
 	let lastName = document.getElementById('last-name').value
 	let email = document.getElementById('email').value
 	let city = document.getElementById('city').value
-	let state = document.getElementById('state').value
+	let country = document.getElementById('country').value
 	let phone_no = document.getElementById('phone_no').value
-    let gender1 = document.getElementById('male').checked
-    let gender2 = document.getElementById('female').checked
-    let gender3 = document.getElementById('others').checked
+        let gender1 = document.getElementById('male').checked
+        let gender2 = document.getElementById('female').checked
+        let gender3 = document.getElementById('others').checked
 	let tnC = document.getElementById('t-and-c').checked
 	let error = false
 
@@ -59,12 +59,12 @@ function validate(isSubmitted = false) {
 			error = true
 		}
 
-		if(state != 'None') {
-			document.getElementById('state-valid').style.display = 'block'
-			document.getElementById('state-invalid').style.display = 'none'
+		if(country != 'None') {
+			document.getElementById('country-valid').style.display = 'block'
+			document.getElementById('country-invalid').style.display = 'none'
 		} else {
-			document.getElementById('state-invalid').style.display = 'block'
-			document.getElementById('state-valid').style.display = 'none'
+			document.getElementById('country-invalid').style.display = 'block'
+			document.getElementById('country-valid').style.display = 'none'
 			error = true
 		}
 
