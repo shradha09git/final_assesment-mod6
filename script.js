@@ -7,9 +7,9 @@ function validate(isSubmitted = false) {
 	let city = document.getElementById('city').value
 	let country = document.getElementById('country').value
 	let phone_no = document.getElementById('phone_no').value
-        let gender1 = document.getElementById('male').checked
-        let gender2 = document.getElementById('female').checked
-        let gender3 = document.getElementById('others').checked
+    let gender1 = document.getElementById('male').checked
+    let gender2 = document.getElementById('female').checked
+    let gender3 = document.getElementById('others').checked
 	let tnC = document.getElementById('t-and-c').checked
 	let error = false
 
@@ -77,7 +77,6 @@ function validate(isSubmitted = false) {
 			document.getElementById('phone_no-valid').style.display = 'none'
 			error = true
 		}
-        
 
         if(gender1 || gender2 || gender3) {
 			document.getElementById('gender-valid').style.display = 'block'
@@ -88,7 +87,6 @@ function validate(isSubmitted = false) {
 			error = true
 		}
 
-	
 		if(tnC) {
 			document.getElementById('t-and-c-invalid').style.display = 'none'
 		} else {
